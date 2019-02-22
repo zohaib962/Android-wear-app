@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="apps.ali.com.wear.MainActivity"
+    tools:deviceIds="wear_round"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/heartRateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="--"
+        android:textColor="#911F3C"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/heartImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon"
+        android:layout_above="@id/heartRateText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/bpmText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BPM"
+        android:textColor="#911F3C"
+        android:layout_below="@id/heartRateText"
+        android:layout_marginLeft="3dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"/>
+
+    <ImageButton
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/play"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bpmText"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        />
+
+    <ImageButton
+        android:id="@+id/btnPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pause"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bpmText"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:visibility="gone"/>
+
+</RelativeLayout>
